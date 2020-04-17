@@ -1,8 +1,8 @@
 function getData(){
   
   var codeRCSspace = $("#RCS").val();
-  var codeRCS = $.trim(codeRCSspace)
-
+  var codeRCS = $.trim(codeRCSspace);
+  
   $.getJSON("https://entreprise.data.gouv.fr/api/rncs/v1/fiches_identite/" + codeRCS,function(dataRCS){
 
   var NAMESOC = dataRCS.dossier_entreprise_greffe_principal.personne_morale.denomination;
