@@ -3,10 +3,10 @@ function getData(){
 
   $.getJSON("https://entreprise.data.gouv.fr/api/rncs/v1/fiches_identite/" + codeRCS,function(dataRCS){
 
-  var NAMESOC = dataRCS.dossier_entreprise_greffe_principal.etablissements[1].nom_commercial;
+  var NAMESOC = dataRCS.dossier_entreprise_greffe_principal.personne_morale.denomination;
   var TYPSOC = dataRCS.dossier_entreprise_greffe_principal.personne_morale.forme_juridique;
   var CAPITAL = Math.round(dataRCS.dossier_entreprise_greffe_principal.personne_morale.capital);
-  var ADRESSSOC = dataRCS.dossier_entreprise_greffe_principal.etablissements[0].adresse_ligne_1 + " - " + dataRCS.dossier_entreprise_greffe_principal.etablissements[0].adresse_code_postal + " - " + dataRCS.dossier_entreprise_greffe_principal.etablissements[0].adresse_ville;
+  var ADRESSSOC = dataRCS.dossier_entreprise_greffe_principal.etablissement_principal.adresse_ligne_1 + " - " + dataRCS.dossier_entreprise_greffe_principal.etablissement_principal.adresse_code_postal + " - " + dataRCS.dossier_entreprise_greffe_principal.etablissement_principal.adresse_ville;
   var VILLESOC = dataRCS.dossier_entreprise_greffe_principal.nom_greffe;
 
   $("#NAMESOC").val(NAMESOC);
