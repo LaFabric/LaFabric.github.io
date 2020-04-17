@@ -1,7 +1,6 @@
 function getData(){
   
-  var codeRCSspace = $("#RCS").val();
-  var codeRCS = $.trim(codeRCSspace);
+  var codeRCS = $.trim("#RCS").val();
   
   $.getJSON("https://entreprise.data.gouv.fr/api/rncs/v1/fiches_identite/" + codeRCS,function(dataRCS){
 
