@@ -1,0 +1,168 @@
+body, html {
+  height: 100%;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+body{
+  overflow-x: hidden;
+}
+
+input[type=text],input[type=email], input[type=url],input[type=tel] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number]{
+  width: 5%;
+  padding: 12px 0;
+  padding-left: 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 33%;
+  background-color: #ff8114;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+#bouti select{
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#Livraison,#livraison_inter {
+  display: none;
+}
+
+.section1 {
+  background-color: #dbcfb0;
+  margin: -15px;
+  padding: 20px 15px 0px 15px;
+  height: 90vh;
+}
+
+.section2 {
+  background-color: #f5f5f5;
+  margin: -15px;
+  padding: 20px 15px 0px 15px;
+  height: 90vh;
+}
+
+.section3 {
+  background-color: #dbcfb0;
+  margin: -15px;
+  padding: 20px 15px 0px 15px;
+  height: 90vh;
+}
+
+.section4 {
+  background-color: #f5f5f5;
+  margin: -15px;
+  padding: 15px 15px 30px 15px;
+  min-height: 100vh;
+}
+
+.section5 {
+  background-color: #f5f5f5;
+  margin: -15px;
+  padding: 20px 15px 30px 15px;
+}
+
+.bottom_submit {
+  background-color: #dbcfb0;
+  margin: -15px;
+  padding: 15px 15px 30px 15px;
+}
+
+hr {
+  border: none;
+  border-top:5px dashed #ee8434;
+}
+
+input[type=submit].bouton_parti {
+margin-bottom: 10px;
+}
+
+#bouton_to_sec2{
+  background-color: #dbcfb0;
+  margin: -15px;
+  padding: 15px 15px 0px 15px;
+  height: 10vh;
+}
+
+#bouton_to_sec3{
+  background-color: #f5f5f5;
+  margin: -15px;
+  padding: 15px 15px 0px 15px;
+  height: 10vh;
+}
+
+#bouton_to_sec5{
+  background-color: #dbcfb0;
+  margin: -15px;
+  padding: 15px 15px 0px 15px;
+  height: 10vh;
+}
+
+a{
+  color: #ff8114;
+}
+
+a:hover{
+  color: #ff8114;
+}
+
+a:visited{
+  color: #ff8114;
+}
+
+#intro p{
+  padding-left: 15px;
+}
+
+#intro li{
+list-style-type: '# ';
+padding-bottom:5px;
+}
+
+#intro a, a:hover a:visited{
+color: #ff8114;
+text-decoration: underline;
+}

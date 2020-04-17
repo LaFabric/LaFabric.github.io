@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+  <link rel = "stylesheet"  type = "text/css"  href = "style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>CGV Generator</title>
+
+  <script src="RCSA.js"></script>
+
+</head>
+
+<body>
+
+<!--
+<a href="#Informations">Info</a><br>
+<button href="#Livraison">Livraison</button>
+<form action="#Livraison" value="obuh">
+    <input type="submit"/>
+</form>
+-->
+
+<div id="intro" class="section4">
+<h1 style="text-align:center;color: #ff8114;">La Fabric.</h1>
+<h2 style="text-align:center;color: #ff8114;">Vos Conditions Générales de Vente (CGV) customisées en quelques clics !</h2>
+<br>
+<ul>
+  <li>Gratuites</li>
+  <li>Libres</li>
+  <li>Customisées en fonction de vos besoins et de votre activité</li>
+  <li>Conformes à la règlementation applicable</li>
+  <li>Automatisées</li>
+  <li>Faciles d'utilisation</li>
+</ul>
+<hr>
+<br>
+<p>Step #1 - Complétez les sections ci-dessous avec les informations relatives à votre activité. Ces informations ne sont pas conservées sur notre serveur.</p>
+<p>Step #2 - Soumettez les données et laissez La Fabric faire son travail en un éclair !</p>
+<p>Step #3 - Profitez gratuitement de CGV adaptées à votre activité et à la règlementation française applicable (principalement le Code de la Consommation).</p>
+<p>Step #4 (optionnel) - Soutenez notre initiative en faisant un don !</p>
+<p>Pour plus d'informations sur le projet, vous pouvez visiter notre <a href="https://github.com/LaFabric/LaFabric.github.io#faq"><b>FAQ</b></a></p>
+<div style="text-align:center">
+  <form action="#Informations_Administratives" >
+      <input type="submit" class="bouton_parti" value="C'est parti !"/>
+  </form>
+  </div>
+</div>
+
+<form action="http://spencerian-official.000webhostapp.com/cgv-clean.php" target="_blank" method="post">
+
+    <div id="Informations_Administratives" class="section1">
+
+<H2><i class="fas fa-balance-scale"></i> Informations Administratives :</H2>
+
+    <label for="RCS">Code RCS :</label>
+    <input type="text" id="RCS" name="RCS" required><br>
+    <label for="NAMESOC">Nom de la société :</label>
+    <input type="text" id="NAMESOC" name="NAMESOC" value="" required placeholder="Données récupérèes automatiquement" disabled><br>
+    <label for="TYPSOC">Forme sociale :</label>
+    <input type="text" id="TYPSOC" required name="TYPSOC" value="" placeholder="Données récupérèes automatiquement" disabled><br>
+    <label for="VILLESOC">Ville d'enregistrement :</label>
+    <input type="text" id="VILLESOC" required name="VILLESOC" value="" placeholder="Données récupérèes automatiquement" disabled><br>
+    <label for="CAPITAL">Capital de la société :</label>
+    <input type="text" id="CAPITAL" required name="CAPITAL" value="" placeholder="Données récupérèes automatiquement" disabled><br>
+    <label for="ADRESSSOC">Siège social de la société :</label>
+    <input type="text" id="ADRESSSOC" required name="ADRESSSOC" value="" placeholder="Données récupérèes automatiquement" disabled><br>
+    <label for="TVA">Code TVA :</label>
+    <input type="text" id="TVA" required name="TVA"><br>
+  </div>
+  <div id="bouton_to_sec2" style="text-align:center">
+  <a href="#Autres Informations"><i class="fas fa-arrow-alt-circle-down fa-2x" s></i></a>
+</div>
+
+<div id="Autres Informations" class="section2">
+
+<H2><i class="fas fa-at"></i> Autres Informations :</H2>
+
+   <label for="RESPPUBLI">Responsable de Publication :</label>
+   <input type="text" id="RESPPUBLI" name="RESPPUBLI"><br>
+   <label for="HEBERGEUR">Identité de l'Hébergeur :</label>
+   <input type="text" id="HEBERGEUR" name="HEBERGEUR"><br>
+   <label for="ADRESSHEB">Adresse de l'Hébergeur :</label>
+   <input type="text" id="ADRESSHEB" name="ADRESSHEB"><br>
+   <label for="EMAIL">Adresse Email:</label>
+   <input type="email" required id="EMAIL" name="EMAIL"><br>
+   <label for="WEBADRESS">Adresse Web :</label>
+   <input type="url" required id="WEBADRESS" name="WEBADRESS"><br>
+   <label for="TEL">Numéro de téléphone :</label>
+   <input type="tel" required id="TEL" name="TEL"><br>
+
+</div>
+
+<br>
+<div id="bouton_to_sec3" style="text-align:center">
+<a href="#section3"><i class="fas fa-arrow-alt-circle-down fa-2x" s></i></a>
+</div>
+<div id ="section3" class="section3">
+<div id="Paiement">
+
+<H2><i class="far fa-credit-card"></i> Modes de Paiement :</H2>
+
+  <input type="checkbox" id="Paypal" name="Paypal">
+  <label for="Paypal"> Paypal</label><br>
+  <input type="checkbox" id="CB" name="CB">
+  <label for="CB"> Carte Bancaire</label><br>
+  <input type="checkbox" id="Chèque" name="Chèque">
+  <label for="Chèque"> Chèque</label><br>
+  <input type="checkbox" id="Virement" name="Virement">
+  <label for="Virement"> Virement</label><br>
+
+</div>
+<br>
+
+<div id="Produits">
+
+<H2><i class="fas fa-ice-cream"></i> Types de produits vendus :</H2>
+
+  <input type="checkbox" id="Materiel" name="Materiel">
+  <label for="Materiel"> Biens Matériels</label><br>
+  <input type="checkbox" id="Immateriel" name="Immateriel">
+  <label for="Immateriel"> Biens Immatériels</label><br>
+
+</div>
+</div>
+<div id="bouton_to_sec5" style="text-align:center">
+<a href="#section5"><i class="fas fa-arrow-alt-circle-down fa-2x" s></i></a>
+</div>
+<div id ="section5" class="section5">
+<div id="Geographie">
+
+<H2><i class="fas fa-globe-europe"></i> Zone de Livraison :</H2>
+
+  <input type="checkbox" id="France" name="France" checked>
+  <label for="France"> France Métropolitaine</label><br>
+  <input type="checkbox" id="DomTom" name="DomTom">
+  <label for="DomTom"> Dom & Tom</label><br>
+  <input type="checkbox" id="UE" name="UE">
+  <label for="UE"> Pays de l'Union Européenne</label><br>
+
+</div>
+<br>
+
+<div id="Livraison">
+
+<H2><i class="fas fa-shipping-fast"></i> Modes de Livraison :</H2>
+<p id="livraison_inter"><b>Livraison Hors France Métropolitaine</b>
+  <br>
+  <br>
+<select name="Livraison_interna" id="Livraison_interna">
+    <option value="">--Choix de Livraison internationale--</option>
+    <option value="Chronopost">Chronopost</option>
+    <option value="DHL">DHL</option>
+    <option value="Colissimo">Colissimo</option>
+    <option value="Porteur">Porteur</option></select>
+  <br>
+  <br>
+<b>Livraison France Métropolitaine</b>
+</p>
+
+<select name="Livraison_1" id="Livraison_1">
+    <option value="">--Choix de Livraison 1--</option>
+    <option value="Chronopost">Chronopost</option>
+    <option value="DHL">DHL</option>
+    <option value="Colissimo">Colissimo</option>
+    <option value="Courrier Simple">Courrier Simple</option>
+    <option value="Courrier Suivi">Courrier Suivi</option>
+    <option value="Courrier Recommande">Courrier Recommandé</option>
+  <input type="text" id="Livraison_1_Prix" name="Livraison_1_Prix" value="Tarif (si applicable)"><br><br>
+
+<select name="Livraison_2" id="Livraison_2">
+    <option value="">--Choix de Livraison 2--</option>
+    <option value="Chronopost">Chronopost</option>
+    <option value="DHL">DHL</option>
+    <option value="Colissimo">Colissimo</option>
+    <option value="Simple">Courrier Simple</option>
+    <option value="Suivi">Courrier Suivi</option>
+    <option value="Recommande">Courrier Recommandé</option>
+<input type="text" id="Livraison_2_Prix" name="Livraison_2_Prix" value="Tarif (si applicable)"><br><br>
+
+<select name="Livraison_3" id="Livraison_3">
+    <option value="">--Choix de Livraison 3--</option>
+    <option value="Chronopost">Chronopost</option>
+    <option value="DHL">DHL</option>
+    <option value="Colissimo">Colissimo</option>
+    <option value="Simple">Courrier Simple</option>
+    <option value="Suivi">Courrier Suivi</option>
+    <option value="Recommande">Courrier Recommandé</option>
+ <input type="text" id="Livraison_3_Prix" name="Livraison_3_Prix" value="Tarif (si applicable)"><br><br>
+
+    <select name="Livraison_4" id="Livraison_4">
+        <option value="">--Choix de Livraison 4--</option>
+        <option value="Chronopost">Chronopost</option>
+        <option value="DHL">DHL</option>
+        <option value="Colissimo">Colissimo</option>
+        <option value="Simple">Courrier Simple</option>
+        <option value="Suivi">Courrier Suivi</option>
+        <option value="Recommande">Courrier Recommandé</option>
+  <input type="text" id="Livraison_4_Prix" name="Livraison_4_Prix" value="Tarif (si applicable)">
+
+        <br>
+        <div id="bouti">
+        <input type="checkbox" id="Boutique" name="Boutique" checked>
+        <label for="Boutique"> Retrait en boutique également disponible</label><br></select>
+
+<p id="boutique_hide">La boutique est ouverte de <input type="number" min="6" max="22" id="H1" name="H1"> heures à <input type="number" min="6" max="22" id="H2" name="H2" size="1"> heures, du <select name="J1" id="J1">
+        <option value="Lundi">Lundi</option>
+        <option value="Mardi">Mardi</option>
+        <option value="Mercredi">Mercredi</option>
+        <option value="Jeudi">Jeudi</option>
+        <option value="Vendredi">Vendredi</option>
+        <option value="Samedi">Samedi</option>
+        <option value="Dimanche">Dimanche</option></select> au <select name="J2" id="J2">
+                <option value="Lundi">Lundi</option>
+                <option value="Mardi">Mardi</option>
+                <option value="Mercredi">Mercredi</option>
+                <option value="Jeudi">Jeudi</option>
+                <option value="Vendredi">Vendredi</option>
+                <option value="Samedi">Samedi</option>
+                <option value="Dimanche">Dimanche</option></select>.</p><br>
+</div>
+</div>
+</div>
+
+<div style="text-align:center;" class="bottom_submit">
+
+     <input type="submit" value="Soumettre">
+ </form>
+</div>
+</div>
+</body>
+</html>
