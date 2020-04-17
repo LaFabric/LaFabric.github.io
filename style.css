@@ -116,6 +116,10 @@ hr {
   border-top:5px dashed #ee8434;
 }
 
+h2 {
+  padding-top: 20px;
+}
+
 input[type=submit].bouton_parti {
 margin-bottom: 10px;
 }
