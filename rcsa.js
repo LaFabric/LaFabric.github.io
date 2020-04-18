@@ -37,10 +37,8 @@ $(document).ready(function(){
     $('#Materiel').change(function(){
         if(this.checked)
             $('#Livraison').show();
-            $('#Livraison_1').required = true ;
         else
             $('#Livraison').hide();
-            $('#Livraison_1').required = false ;
     });
     $('#DomTom').change(function(){
         if(this.checked)
