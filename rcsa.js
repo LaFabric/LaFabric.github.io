@@ -78,50 +78,18 @@ $(document).ready(function(){
       else
         document.forms["FormGlobal"]["Materiel"].required = true;
     });
-
-    $('#Paypal').change(function(){
-        if(this.checked)
-        document.forms["FormGlobal"]["CB"].required = false,
-        document.forms["FormGlobal"]["Chèque"].required = false,
-        document.forms["FormGlobal"]["Virement"].required = false;
-      else
-      document.forms["FormGlobal"]["CB"].required = true,
-      document.forms["FormGlobal"]["Chèque"].required = true,
-      document.forms["FormGlobal"]["Virement"].required = true;
-    });
-
-    $('#CB').change(function(){
+    $('#Paypal').change(function()||$('#CB').change(function()||$('#Virement').change(function()||$('#Chèque').change(function()  {
         if(this.checked)
         document.forms["FormGlobal"]["Paypal"].required = false,
+        document.forms["FormGlobal"]["CB"].required = false,
         document.forms["FormGlobal"]["Chèque"].required = false,
         document.forms["FormGlobal"]["Virement"].required = false;
       else
       document.forms["FormGlobal"]["Paypal"].required = true,
+      document.forms["FormGlobal"]["CB"].required = true,
       document.forms["FormGlobal"]["Chèque"].required = true,
       document.forms["FormGlobal"]["Virement"].required = true;
     });
-
-    $('#Chèque').change(function(){
-        if(this.checked)
-        document.forms["FormGlobal"]["CB"].required = false,
-        document.forms["FormGlobal"]["Paypal"].required = false,
-        document.forms["FormGlobal"]["Virement"].required = false;
-      else
-      document.forms["FormGlobal"]["CB"].required = true,
-      document.forms["FormGlobal"]["Paypal"].required = true,
-      document.forms["FormGlobal"]["Virement"].required = true;
-    });
-
-    $('#Virement').change(function(){
-        if(this.checked)
-        document.forms["FormGlobal"]["CB"].required = false,
-        document.forms["FormGlobal"]["Chèque"].required = false,
-        document.forms["FormGlobal"]["Paypal"].required = false;
-      else
-      document.forms["FormGlobal"]["CB"].required = true,
-      document.forms["FormGlobal"]["Chèque"].required = true,
-      document.forms["FormGlobal"]["Paypal"].required = true;
-    });  
     $("#RCS").focusout(function(){
       getData();
     })
