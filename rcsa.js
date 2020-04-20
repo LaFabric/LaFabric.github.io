@@ -1,8 +1,8 @@
 function getData(){
-  
+
   var codeRCS = $("#RCS").val().replace(/\s+/g, '');
   console.log(codeRCS)
-  
+
   $.getJSON("https://entreprise.data.gouv.fr/api/rncs/v1/fiches_identite/" + codeRCS,function(dataRCS){
 
   var NAMESOC = dataRCS.dossier_entreprise_greffe_principal.personne_morale.denomination;
@@ -20,7 +20,8 @@ function getData(){
 })
 .fail(
 function(){
-  console.log("error noooon")
+  console.log("error noooon");
+  alert("Le code RCS entré n'est pas reconnu, veuillez complétez les champs manuellement");
 
 })
 .always(
@@ -36,9 +37,11 @@ function(){
 $(document).ready(function(){
     $('#Materiel').change(function(){
         if(this.checked)
-            $('#Livraison').show();
+            $('#Livraison').show(),
+            document.forms["FormGlobal"]["Livraison_1"].required = true ;
         else
-            $('#Livraison').hide();
+            $('#Livraison').hide(),
+            document.forms["FormGlobal"]["Livraison_1"].required = false ;
     });
     $('#DomTom').change(function(){
         if(this.checked)
@@ -54,18 +57,17 @@ $(document).ready(function(){
     });
     $('#Boutique').change(function(){
         if(this.checked)
-            $('#boutique_hide').fadeIn('fast');
+            $('#boutique_hide').fadeIn('fast'),
+            document.forms["FormGlobal"]["H1"].required = true,
+            document.forms["FormGlobal"]["H2"].required = true;
+
         else
-            $('#boutique_hide').fadeOut('fast');
+            $('#boutique_hide').fadeOut('fast'),
+            document.forms["FormGlobal"]["H1"].required = false,
+            document.forms["FormGlobal"]["H2"].required = false;
     });
     $("#RCS").focusout(function(){
       getData();
-    })
-    $("#RCS").keypress(
-      function(event){
-        if (event.which == '13') {
-      getData();
-      }
     })
 });
 $(document).keypress(
