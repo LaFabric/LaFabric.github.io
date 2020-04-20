@@ -66,6 +66,18 @@ $(document).ready(function(){
             document.forms["FormGlobal"]["H1"].required = false,
             document.forms["FormGlobal"]["H2"].required = false;
     });
+    $('#Materiel').change(function(){
+        if(this.checked)
+        document.forms["FormGlobal"]["Immateriel"].required = false;
+      else
+        document.forms["FormGlobal"]["Immateriel"].required = true;
+    });
+    $('#Immateriel').change(function(){
+        if(this.checked)
+        document.forms["FormGlobal"]["Materiel"].required = false;
+      else
+        document.forms["FormGlobal"]["Materiel"].required = true;
+    });
     $("#RCS").focusout(function(){
       getData();
     })
