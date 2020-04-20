@@ -14,7 +14,7 @@
   <title>CGV Generator</title>
 
   <script src="rcsa.js"></script>
-  
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-  
+
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCZK6K"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<form action="http://spencerian-official.000webhostapp.com/cgv-clean.php" target="_blank" method="post">
+<form action="http://spencerian-official.000webhostapp.com/cgv-clean.php" target="_blank" method="post" id="FormGlobal">
 
     <div id="Informations_Administratives" class="section1">
 
@@ -215,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <input type="checkbox" id="Boutique" name="Boutique" checked>
         <label for="Boutique"> Retrait en boutique également disponible</label><br></select>
 
-<p id="boutique_hide">La boutique est ouverte de <input type="number" min="6" max="22" id="H1" name="H1"> heures à <input type="number" min="6" max="22" id="H2" name="H2" size="1"> heures, du <select name="J1" id="J1">
+<p id="boutique_hide">La boutique est ouverte de <input type="number" min="6" max="22" id="H1" name="H1" required> heures à <input type="number" min="6" max="22" id="H2" name="H2" size="1" required> heures, du <select name="J1" id="J1">
         <option value="Lundi">Lundi</option>
         <option value="Mardi">Mardi</option>
         <option value="Mercredi">Mercredi</option>
@@ -227,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <option value="Mardi">Mardi</option>
                 <option value="Mercredi">Mercredi</option>
                 <option value="Jeudi">Jeudi</option>
-                <option value="Vendredi">Vendredi</option>
+                <option value="Vendredi" selected>Vendredi</option>
                 <option value="Samedi">Samedi</option>
                 <option value="Dimanche">Dimanche</option></select>.</p><br>
 </div>
