@@ -99,20 +99,20 @@ input[type=submit] {
 
 .section1 {
   background-color: #f9f8f7;
-  padding: 20px 15px 30px 15px;
+  padding: 20px 15px 30px 25px;
   margin : 0 -15px 0 -15px;
 }
 
 .section2 {
   background-color: #1a1a1a;
   color:white;
-  padding: 20px 15px 30px 15px;
+  padding: 20px 15px 30px 25px;
   margin : 0 -15px 0 -15px;
 }
 
 .section3 {
   background-color: #f9f8f7;
-  padding: 20px 15px 30px 15px;
+  padding: 20px 15px 30px 25px;
   margin : 0 -15px 0 -15px;
 }
 
@@ -126,7 +126,7 @@ input[type=submit] {
 .section5 {
   background-color: #1a1a1a;
   color: white;
-  padding: 20px 15px 30px 15px;
+  padding: 20px 15px 30px 25px;
   margin : 0 -15px 0 -15px;
 }
 
@@ -140,10 +140,6 @@ input[type=submit] {
 hr {
   border: none;
   border-top:5px dashed #ee8434;
-}
-
-h2 {
-  padding-top: 20px;
 }
 
 input[type=submit].bouton_parti {
