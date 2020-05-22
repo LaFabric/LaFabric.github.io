@@ -101,7 +101,6 @@ input[type=submit] {
   background-color: #f9f8f7;
   margin: -15px;
   padding: 20px 15px 0px 15px;
-  min-height: 90vh;
 }
 
 .section2 {
@@ -109,14 +108,12 @@ input[type=submit] {
   color:white;
   margin: -15px;
   padding: 20px 15px 0px 15px;
-  min-height: 90vh;
 }
 
 .section3 {
   background-color: #f9f8f7;
   margin: -15px;
   padding: 20px 15px 0px 15px;
-  min-height: 90vh;
 }
 
 .section4 {
