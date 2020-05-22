@@ -2,6 +2,7 @@ body, html {
   height: 100%;
   font-family: 'Roboto';
   color : #1c1c1c;
+  background-color: blue;
 }
 
 body{
@@ -99,40 +100,42 @@ input[type=submit] {
 
 .section1 {
   background-color: #f9f8f7;
-  padding: 20px 15px 0px 15px;
-  margin : 0 -15px 15px -15px;
+  padding: 20px 15px 30px 15px;
+  margin : 0 -15px 0 -15px;
 }
 
 .section2 {
   background-color: #1a1a1a;
   color:white;
-  padding: 20px 15px 0px 15px;
-  margin : 0 -15px 15px -15px;
+  padding: 20px 15px 30px 15px;
+  margin : 0 -15px 0 -15px;
 }
 
 .section3 {
   background-color: #f9f8f7;
-  padding: 20px 15px 0px 15px;
-  margin : 0 -15px 15px -15px;
+  padding: 20px 15px 30px 15px;
+  margin : 0 -15px 0 -15px;
 }
 
 .section4 {
   background-color: #1a1a1a;
   color: white;
-  padding: 15px 15px 30px 15px;
-  margin : 0 -15px 15px -15px;
+  padding: 20px 15px 30px 15px;
+  margin : -15px -15px 0 -15px;
 }
 
 .section5 {
   background-color: #1a1a1a;
   color: white;
   padding: 20px 15px 30px 15px;
-  margin : 0 -15px 15px -15px;
+  margin : 0 -15px 0 -15px;
 }
 
 .bottom_submit {
   background-color: #f9f8f7;
-  padding: 15px 15px 30px 15px;
+  padding: 20px 15px 30px 15px;
+  margin : 0 -15px 0 -15px;
+
 }
 
 hr {
@@ -150,26 +153,6 @@ margin-bottom: 20px;
   -webkit-appearance: none;
 }
 
-#bouton_to_sec2{
-  background-color: #f9f8f7;
-  margin: -15px;
-  padding: 15px 15px 0px 15px;
-  height: 10vh;
-}
-
-#bouton_to_sec3{
-  background-color: #1a1a1a;
-  margin: -15px;
-  padding: 15px 15px 0px 15px;
-  height: 10vh;
-}
-
-#bouton_to_sec5{
-  background-color: #f9f8f7;
-  margin: -15px;
-  padding: 15px 15px 0px 15px;
-  height: 10vh;
-}
 
 a{
   color: #ff8114;
