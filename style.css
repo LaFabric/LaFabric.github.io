@@ -93,7 +93,7 @@ input[type=submit] {
   box-sizing: border-box;
 }
 
-#Livraison,#livraison_inter {
+#Livraison,#livraison_inter,#ERRORRCS {
   display: none;
 }
 
