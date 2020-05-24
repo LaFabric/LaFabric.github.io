@@ -97,6 +97,11 @@ input[type=submit] {
   display: none;
 }
 
+#ERRORRCS {
+  color: #ff8114;
+  padding: 6px 20px;
+}
+
 .section1 {
   background-color: #f9f8f7;
   padding: 20px 15px 30px 25px;
