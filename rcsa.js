@@ -21,9 +21,7 @@ function getData(){
 .fail(
 function(){
   console.log("error noooon");
-  $('#ERRORRCS').show(),
-
-
+  $('#ERRORRCS').show();
 })
 .always(
   function(){
