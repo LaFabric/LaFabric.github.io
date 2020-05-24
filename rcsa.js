@@ -21,7 +21,8 @@ function getData(){
 .fail(
 function(){
   console.log("error noooon");
-  alert("Le code RCS entré n'est pas reconnu, veuillez complétez les champs manuellement");
+  $('#ERRORRCS').show(),
+
 
 })
 .always(
