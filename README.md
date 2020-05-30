@@ -32,4 +32,4 @@ Aucune donnée saisie par le professionnel n'est conservée sur le serveur. Les 
 
 __Comment soutenir l'intiative de La Fabric ?__
 
-Si vous appréciez le travail effectué et souhaitez encourager/soutenir cette initiative, vous pouvez effectuer un don via le lien suivant : xxxxx ou nous écrire pour nous faire part de vos commentaires et idées d'amélioration.
+Si vous appréciez le travail effectué et souhaitez encourager/soutenir cette initiative, vous pouvez effectuer un don via le lien suivant : https://www.buymeacoffee.com/KDc4W3r ou nous écrire pour nous faire part de vos commentaires et idées d'amélioration.
